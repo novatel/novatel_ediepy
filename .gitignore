@@ -1,0 +1,13 @@
+*.egg-info/
+**/__pycache__/*.*
+*.log
+*.vscode/
+*.code-workspace
+venv
+.idea
+artifacts
+resources
+build
+novatel_edie/msg_structures.py
+test/msg_structures.py
+dist

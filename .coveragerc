@@ -1,0 +1,11 @@
+[paths]
+source =
+    ../novatel_edie
+    */site-packages/novatel_edie
+
+[run]
+source =
+    novatel_edie
+omit =
+    */version.py
+    .tox/*

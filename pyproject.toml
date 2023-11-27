@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "novatel_edie"
+version = "1.5.9"
+description = "Package for working with NovAtel receiver data"
+authors = ["rdoris <rdoris@novatel.com>"]
+readme = "README.md"
+packages = [
+    { include = "novatel_edie" }
+]
+include = [
+    "poetry.lock",
+    "requirements.txt",
+    "novatel_edie/resources/*.dll",
+    "novatel_edie/resources/*.so",
+    "novatel_edie/resources/*.json"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-cov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+url = 'https://artifactory.devops.corp.novatel.ca/artifactory/api/pypi/novpypi_virtual_prod/simple/'
+name = 'arti_novpypi'
+default = true
+
+[tool.poetry.scripts]
+edie-generate-structures = { callable = "novatel_edie.generate_log_structures:main" }
