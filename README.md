@@ -1,3 +1,9 @@
+# Archived
+
+This repository is no longer maintained. Its functionality has been merged into [novatel_edie](https://github.com/novatel/novatel_edie).
+
+The current Python documentation is in the [python directory](https://github.com/novatel/novatel_edie/tree/main/python). Please use the new repository for documentation, issues, and development.
+
 # novatel_edie
 
 novatel_edie is a Python package for interfacing with EDIE. EDIE (Encode Decode Interface Engine) is a C++ SDK that can
